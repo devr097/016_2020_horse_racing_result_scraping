@@ -105,8 +105,6 @@ class App(tkinter.Tk):
                 if url_number == int(chr(48)):
                     tkinter.messagebox.showerror("Error", "There is no correct url in the current file.\nPlease select url list file again.")
                     return
-                elif url_number>int(chr(49)+chr(48)+chr(48)):
-                    tkinter.messagebox.showwarning("Warning","There are more URLS than 100")
                 else:
                     pass     
             if url_number < int(chr(49)+chr(48)+chr(49)):       
